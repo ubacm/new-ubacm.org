@@ -1,0 +1,19 @@
+
+header {
+    background-color: white;
+    color: #005DC2;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+ 

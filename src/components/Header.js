@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './headerlogo.png';
+import logo from './media/headerlogo.png';
 import './Header.css';
 import { Link } from 'react-router-dom';
 
@@ -10,26 +10,26 @@ const Header = () => {
             <ul>
                 <li>
                   <Link to ='/'>
-                    <img src={logo} alt="Home" style={{ width: '300px', cursor: 'pointer' }} />
+                    <img src={logo} alt="Home" style={{width: '120%', cursor: 'pointer'}} />
                   </Link>
                 </li>
-                <li className="right-items">
+                <li style = {{marginLeft: 800}}>
                   <Link to="/about">About Us</Link>
                 </li>
-                <li className="right-items">
+                <li>
                   <Link to="/eboard">Eboard</Link>
                 </li>
-                <li className="right-items">
-                  <Link to="/codeofconduct">CodeofConduct</Link>
+                <li>
+                  <Link to="/codeofconduct">Code of Conduct</Link>
                 </li>
-                <li className="right-items">
+                <li>
                   <Link to="/events">Events</Link>
                 </li>
-                <li className="right-items">
-                  <Link to="/chapterconstitution">ChapterConstitution</Link>
+                <li>
+                  <Link to="/chapterconstitution">Chapter Constitution</Link>
                 </li>
-                <li className="right-items">
-                  <Link to="/stayintouch">StayInTouch</Link>
+                <li>
+                  <Link to="/stayintouch">Stay In Touch</Link>
                 </li> 
             </ul>
         </nav>

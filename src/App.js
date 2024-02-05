@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -11,20 +11,20 @@ import StayInTouch from './components/StayInTouch';
 
 function App() {
   return (
-      <Router>
-        <div>
+        <div> 
+          <BrowserRouter>
           <Header/>
-          <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/eboard" component={Eboard} />
-          <Route path="/codeofconduct" component={CodeofConduct} />
-          <Route path="/events" component={Events} />
-          <Route path="/chapterconstitution" component={ChapterConstitution} />
-          <Route path="/stayintouch" component={StayInTouch} />
-          </Routes>
+            <Routes>
+              <Route path="/"  element={<Home/>} />
+              <Route path="/about" element= {<About/>}/>
+              <Route path="/eboard" element={<Eboard/>} />
+              <Route path="/codeofconduct" element={<CodeofConduct/>} />
+              <Route path="/events" element={<Events/>} />
+              <Route path="/chapterconstitution" element={<ChapterConstitution/>} />
+              <Route path="/stayintouch" element={<StayInTouch/>} />
+            </Routes>
+          </BrowserRouter>
         </div>
-      </Router>
   );
 };
 

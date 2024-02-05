@@ -1,19 +1,34 @@
-
 header {
-    background-color: white;
-    color: #005DC2;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  nav li {
-    margin: 0 10px;
-    cursor: pointer;
-  }
-  
- 
+  background-color: whitesmoke; /* Set your desired background color */
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+}
+
+nav ul li {
+  margin-right: 30px; /*Spacing between header items */
+}
+
+nav ul li:last-child {
+  border: 1px solid #005DC2; 
+  border-radius: 10px;
+  padding: 5px; 
+}
+
+nav a {
+  text-decoration: none;
+  color: #005DC2; 
+}
+
+img {
+  width: 250px;
+  cursor: pointer;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './media/headerlogo.png';
-import './Header.css';
+import './Header.css'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -10,10 +10,10 @@ const Header = () => {
             <ul>
                 <li>
                   <Link to ='/'>
-                    <img src={logo} alt="Home" style={{width: '120%', cursor: 'pointer'}} />
+                    <img src={logo} alt="Home" />
                   </Link>
                 </li>
-                <li style = {{marginLeft: 800}}>
+                <li>
                   <Link to="/about">About Us</Link>
                 </li>
                 <li>
@@ -28,7 +28,7 @@ const Header = () => {
                 <li>
                   <Link to="/chapterconstitution">Chapter Constitution</Link>
                 </li>
-                <li>
+                <li className='last-child'>
                   <Link to="/stayintouch">Stay In Touch</Link>
                 </li> 
             </ul>

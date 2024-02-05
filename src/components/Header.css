@@ -1,6 +1,5 @@
 header {
-  background-color: whitesmoke; /* Set your desired background color */
-  padding: 0px;
+  background-color: white; /* Set your desired background color */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,14 +9,15 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-
+  flex-direction: row;
+  text-align: center;
 }
 
 nav ul li {
   margin-right: 30px; /*Spacing between header items */
 }
 
-nav ul li:last-child {
+nav ul li.last-child {
   border: 1px solid #005DC2; 
   border-radius: 10px;
   padding: 5px; 
@@ -28,7 +28,19 @@ nav a {
   color: #005DC2; 
 }
 
-img {
-  width: 250px;
-  cursor: pointer;
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Card.css'; 
-import './CenteredContainer.css';
 import hacknightsimage from "./media/hacknights.png";
 import ubacmlogo from "./media/ubacm.png";
 import workshopimg from "./media/workshop.jpg"

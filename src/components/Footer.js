@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <div className="footer">
         <div className= "left-half">
-          <span style={{fontSize: 12, cursor: 'pointer'}} onClick={scrollToTop}>
+          <span style={{fontSize: 12, cursor: 'pointer'}} onClick={scrollToTop} >
             Return to Top
           </span>
           <p className="text">
@@ -33,19 +33,19 @@ const Footer = () => {
           <Link to ='/'>
           <img src={logo1} alt='' className="logo1"/>
           </Link>
-          <Link to ='https://engineering.buffalo.edu/'>
+          <Link to ='https://engineering.buffalo.edu/' target="_blank" rel="noopener noreferrer">
           <img src={logo2} alt='' className="logo1"/>
           </Link>
-          <Link to = 'https://www.sa.buffalo.edu/'>
+          <Link to = 'https://www.sa.buffalo.edu/' target="_blank" rel="noopener noreferrer">
           <img src={logo3} alt='' className="logo1"/>
           </Link>
-          <Link to = 'https://www.acm.org/'>
+          <Link to = 'https://www.acm.org/' target="_blank" rel="noopener noreferrer">
             <img src={logo4} alt='' className="logo1"/>
           </Link>
         </div>
         <div className= "right-half">
           <h1 style={{fontSize: 12}}>
-            Â© 2024 UB ACM
+            © 2024 UB ACM
           </h1>
           <div className= "links1">
             <li className="link1">
@@ -61,10 +61,10 @@ const Footer = () => {
               <Link to="/chapterconstitution">Constitution</Link>
             </li>
             <li className="links2">
-              <Link to="https://discord.gg/dKyK8D27cK">
+              <Link to="https://discord.gg/dKyK8D27cK" target="_blank" rel="noopener noreferrer">
                 <img src={logo5} alt='' style={{height: 41}}/>
               </Link>
-              <Link to="https://github.com/ ">
+              <Link to="https://github.com/" target="_blank" rel="noopener noreferrer">
                 <img src={logo6} alt='' style={{height: 50}}/>
               </Link>
             </li>

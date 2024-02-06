@@ -30,10 +30,18 @@ const Footer = () => {
           <p className="text">
             {bodyText}
           </p>
+          <Link to ='/'>
           <img src={logo1} alt='' className="logo1"/>
+          </Link>
+          <Link to ='https://engineering.buffalo.edu/'>
           <img src={logo2} alt='' className="logo1"/>
+          </Link>
+          <Link to = 'https://www.sa.buffalo.edu/'>
           <img src={logo3} alt='' className="logo1"/>
-          <img src={logo4} alt='' className="logo1"/>
+          </Link>
+          <Link to = 'https://www.acm.org/'>
+            <img src={logo4} alt='' className="logo1"/>
+          </Link>
         </div>
         <div className= "right-half">
           <h1 style={{fontSize: 12}}>

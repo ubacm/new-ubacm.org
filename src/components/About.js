@@ -4,6 +4,9 @@ import './CenteredContainer.css';
 import hacknightsimage from "./media/hacknights.png";
 import ubacmlogo from "./media/ubacm.png";
 import workshopimg from "./media/workshop.jpg"
+import techtalkimg from "./media/techtalk.jpg"
+import bowling from "./media/bowling.jpg"
+
 
 const About = () => {
   return (
@@ -36,7 +39,9 @@ const About = () => {
       <div className="card-content">
         <h2>OUR EVENTS</h2>
         <p>All of our weekly meetings, events, and hackathons are optional, so pick and choose your favorites to come. We'd love for you to come to all of them though!</p>
-        <img src={workshopimg} alt="Hack Nights Image" style={{width: "200px", height: "auto"}}/>
+        <img src={workshopimg} alt="Hack Nights Image" style={{width: "200px", height: "120px", borderRadius: "10px", marginRight: "10px"}}/>
+        <img src={techtalkimg} alt="Tech Talk Image" style={{width: "200px", height: "120px", borderRadius: "10px",marginRight: "10px"}}/>
+        <img src={bowling} alt="Bowling Image" style={{width: "200px", height: "120px", borderRadius: "10px"}}/>
       </div>
       <div  className="card-content2">
         <p>Workshops: Discover a variety of introductory workshops led by experienced upperclassmen, covering technologies used in industry and academia. Topics include Introductory Python, Docker, Web Development, and Resume Reviews.

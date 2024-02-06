@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
+      <div className = "list-container-left">
+        <Link to ='/'>
+          <img src={logo} alt="Home" />
+        </Link>
+      </div>
+      <div className="list-container-right">
         <nav>
             <ul>
-                <li>
-                  <Link to ='/'>
-                    <img src={logo} alt="Home" />
-                  </Link>
-                </li>
                 <li>
                   <Link to="/about">About Us</Link>
                 </li>
@@ -33,6 +34,7 @@ const Header = () => {
                 </li> 
             </ul>
         </nav>
+        </div>
   </header>
   );
 };

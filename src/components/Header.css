@@ -5,6 +5,13 @@ header {
   align-items: center;
 }
 
+.list-container-right {
+  margin-left: auto; /* Push the whole list to the right */
+}
+
+.list-container-left {
+  margin-right: auto; /* Push the whole list to the right */
+}
 nav ul {
   list-style: none;
   display: flex;

@@ -8,12 +8,13 @@ import CodeofConduct from './components/CodeofConduct';
 import Events from './components/Events';
 import ChapterConstitution from './components/ChapterConstitution';
 import StayInTouch from './components/StayInTouch';
+import Footer from './components/Footer';
 
 function App() {
   return (
-        <div> 
+        <div className="app-container"> 
           <BrowserRouter>
-          <Header/>
+            <Header/>
             <Routes>
               <Route path="/"  element={<Home/>} />
               <Route path="/about" element= {<About/>}/>
@@ -23,9 +24,10 @@ function App() {
               <Route path="/chapterconstitution" element={<ChapterConstitution/>} />
               <Route path="/stayintouch" element={<StayInTouch/>} />
             </Routes>
+            <Footer/>
           </BrowserRouter>
         </div>
+
   );
 };
-
 export default App;

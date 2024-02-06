@@ -1,0 +1,11 @@
+.centered-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Adjust to 100% of the viewport height */
+  }
+  
+  .card {
+    margin: 10px 0; /* Adjust margin as needed to create space between cards */
+  }
